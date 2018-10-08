@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" type="" href="/css/main.css">
+    <script src="/libs/jquery-2.1.4.min.js"></script>
+    <script src="/scripts/index.js"></script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="btnConfig">
+            <div class="runNumRow">
+                <span id="tableLoad" class="mr20 dn">加载中...</span>
+                <input class="iptRunNum dn" type="text" name="" value="" placeholder="运行次数" />
+                <button id="btnRun" class="btn" type="button">运行</button>
+                <button id="refreshList"  class="btn" type="button">刷新列表</button>
+                <button id="removeAllList"  class="btn" type="button">删除所有</button>
+            </div>
+        </div>
+        <div id="resultContent">
+            <table class="resultTable">
+                <thead>
+                    <th>开始时间</th>
+                    <th>结束时间</th>
+                    <th>测试人</th>
+                    <th>测试单元数</th>
+                    <th>通过个数</th>
+                    <th>查看详情</th>
+                </thead>
+                <tbody class=""></tbody>
+            </table>
+        </div>
+        <div class="MainWrapper">
+            <div class="backHome">
+                <button class="btnBack">返回</button>
+            </div>
+            <div class="resultContainer">
+                <table class="caseTable">
+                    <thead>
+                        <th>测试单元</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>状态</th>
+                        <th>查看详情</th>
+                    </thead>
+                <tbody></tbody>                    
+                </table>
+            </div>
+        </div>
+
+        <div class="detailContainer">
+            <div class="backHome">
+                <button class="btnBackList">返回</button>
+            </div>
+            <div class="resultContainer">
+                <table class="detailTable">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div> 
+    </div>
+</body>
+<script>
+  new TestResult().show();
+</script>
+
+</html>

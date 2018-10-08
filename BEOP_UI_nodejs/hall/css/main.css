@@ -1,0 +1,287 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: #F4F8F9;
+        font-family: Microsoft YaHei, Helvetica;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    .ml10 {
+        margin-left: 10px;
+    }
+
+    .mr10 {
+        margin-right: 10px;
+    }
+
+    .mr20 {
+        margin-right: 20px;
+        color: orange;
+    }
+
+    #mainContainer {
+        position: relative;
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        background: #FBFBFB;
+        color: #999;
+    }
+
+    #btnConfig {
+        margin: auto;
+        width: 100%;
+        padding: 15px 10px;
+        display: flex;
+        justify-content: flex-end;
+        /*background: #132936;*/
+        border-bottom: 1px solid;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .btn {
+        margin: 5px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    #btnRun {
+        border: 1px solid #5DCF53;
+        background: #5DCF53;       
+    }
+
+    #refreshList {
+        border: 1px solid #69A4DE;
+        background: #69A4DE;       
+    }
+
+    #removeAllList {
+            border: 1px solid #979797;
+        background: #a7a7a7;
+    }
+
+    .btnLook, .btnRemove {
+        padding: 5px 10px;
+        border: 0px solid #ccc;
+        color: #fff;
+    }
+
+    .btnLook {
+        background: #69A4DE;
+    }
+
+    .btnRemove {
+        background: #a7a7a7;
+    }
+
+    .runNumRow {
+        margin-right: 30px;
+    }
+
+    .runNumRow label {
+        margin-right: 5px;
+    }
+
+    .iptRunNum {
+        background: #efefef;
+        border: 1px solid #ccc;
+        width: 70px;
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    #resultContent{
+        width: 100%;
+        height: calc(100vh - 150px);
+        overflow-y: auto;
+    }
+    .resultTable {
+        width: 100%;
+        text-align: center;
+        color: #666;
+    }
+    .resultBody {
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .resultTable thead {
+        /*display: table;*/
+        width: 100%;
+        table-layout: fixed;
+        position: relative;
+    }    
+    .resultTable thead,
+    .resultTable tr {
+        height: 30px;
+    }
+ 
+    .resultTable thead th td,
+    .resultTable tr td {
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .resultTable thead {
+        color: #111;
+    }
+
+    .resultTable tbody  tr:nth-child(odd) {
+        background:#eee;
+    }
+
+    .resultTable tbody tr:hover {
+        background: #efefef;
+    }
+
+    /*.resultTable tbody tr:nth-child(odd) {
+        background: #eee;
+    }*/
+    
+    /*查看详情页面开始*/
+
+    .MainWrapper {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #FBFBFB;
+        color: #999;
+        z-index: 10;
+    }
+
+    .backHome {
+        width: 100%;
+        height: 70px;
+        padding: 15px 10px;
+        display: flex;
+        /*justify-content: flex-end; */
+        border-bottom: 1px solid;
+    }
+
+    .btnBack {
+        margin: 20px;
+        padding: 5px 25px;
+        background: #5DCF53;
+        border: none;
+        font-size: 14px;
+        color: #fff;
+    }
+    .caseTable{
+        width: 100%;
+        text-align: center;
+        border-collapse: separate;
+        border-spacing: 0px 10px;
+        color: #666;        
+    }
+    .btnLookDetail {
+        padding: 5px 10px;
+        background: #69A4DE;
+        border: 0px solid #ccc;
+        color: #fff;
+    }
+    /*查看详情页面结束*/
+
+    .detailContainer {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #FBFBFB;
+        color: #999;
+        z-index: 20;
+    }
+
+    .btnBackList {
+        margin: 20px;
+        padding: 5px 25px;
+        background: #5DCF53;
+        border: none;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .detailTable {
+        width: 80%;
+        margin: 10px auto;
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 0px;
+        color: #666;
+        border: 1px solid #ccc;
+    }
+    .detailTable tbody tr td{        
+        padding: 5px 10px;
+        border-top: 1px solid #b1aeae;
+        border-bottom: 1px solid #f3eeee;
+        border-left: 1px solid #b1aeae;
+        border-right: 1px solid #f3eeee;
+    }
+    .stepLog{
+        display: flex;
+        padding: 2px 5px;
+    }
+    .stepLog span:first-child{
+        width: 50px;
+        padding-right: 15px;
+        text-align: right;
+    }
+    .casePass {
+        color: #5DCF53;
+    }
+    .caseNotPass {
+        color: red
+    }
+    .stepBox {
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: calc(100vh - 300px)
+    }
+    .screenCatch {       
+        padding: 10px;        
+    }
+    .screenCatch img{
+        width: 100%;
+    }
+
+    /*查看图片开始*/
+    .screenMask{
+        display: none;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        background: rgba(155,155,155,0.5);
+    }
+    #imgContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        transform: translate(-50%,-50%); 
+        border-radius: 5px;
+    }
+    #imgContainer img{
+        width: 100%;
+    }
